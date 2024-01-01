@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <h1>Welcome!</h1>
+    <p>
+        In this hands-on project, we'll dive into the dynamic landscape of information technology, where advancements and changes can occur very quickly. In our project, we will utilize VMware Workstation, a versatile and robust virtualization platform. Our project involves installing and configuring three different operating systems: Windows 10, Windows Server 2019, and Ubuntu 22.04.
+        <br><br>
+        While the initial set of instructions has been created to ensure a smooth deployment of web servers, the installation and configuration of specific roles on the server, and applications on the desktop operating systems, keep in mind that the field of IT is ever-evolving. As time progresses, troubleshooting may become necessary, as processes may evolve.
+        <br><br>
+        Stay prepared for an engaging journey into the world of virtualization and system integration! Let's navigate through the intricacies of tying together these operating systems while creating a robust and interconnected environment in VMware WORKSTATION PRO 17. Embrace the evolving nature of IT as we explore, learn, and adapt together!
+    </p>
+    <p>
+        <h3>During this project, we will:</h3>
+        
+        <ol>
+            <li>Install VMware and relevant operating systems onto a portable drive</li>
+            <li>Practice incremental changes in virtual machines & create periodic backups</li>
+            <li>Develop a webserver with Wamp on a windows host using the loopback address (127.0.0.1/localhost)</li>
+            <li>Create a hot backup of our Joomla installation</li>
+            <li>Restore our backup created on Windows onto Ubuntu with XAMPP as the software stack</li>
+            <li>Setup a Windows Server</li>
+            <li>Configure DHCP & DNS</li>
+            <li>Create and add computers to an Active Directory</li>
+        </ol>
+    </p>
+    <h2>This project is loosely intended to progress as follows:</h2>
+<ol type="1">
+    <li>Install Operating Systems</li>
+    <ol type="1">
+        <li>Windows Server</li>
+        <li>Windows 10</li>
+        <li>Ubuntu</li>
+        <li>Update all operating systems (at home, it takes a while)</li>
+    </ol>
+    <li>Windows 10</li>
+        <ol type="1">
+            <li>Disable UAC (if needed for your Wamp startup method)</li>
+            <li>Install WAMP</li>
+            <li>Configure WAMP</li>
+            <li>Install Joomla</li>
+            <li>Customize your Joomla (at home)</li>
+            <li>Backup Joomla</li>
+            <li>Configure Firewall</li>
+        </ol>
+    <li>Ubuntu</li>
+        <ol type="1">
+            <li>Install XAMPP</li>
+            <li>Restore Joomla (windows 10 PC must be open with Wamp server running, the correct ports open, and you must know the IP address to navigate to the WAMP server, and the backup location on the Wamp server.)</li>
+            <!-- <li>Configure firewall if needed for remote site access</li> -->
+        </ol>
+    <li>Windows Server</li>
+        <ol type="1">
+            <li>Set Static IP</li>
+            <li>Add services</li>
+            <li>Configure DHCP scope</li>
+        </ol>
+    <li>Active Directory / Windows Server</li>
+        <ol type="1">
+            <li>Add Windows to AD</li>
+            <li>Add Ubunto to AD</li>
+        </ol>
+</ol>
+<h2>Requirements</h2>
+    <p>
+        <ol>
+            <li>200GB or greater portable SSD</li>
+            <li>VMWare*</li>
+            <li>Windows 10 ISO*</li>
+            <li>Windows Server*</li>
+            <li><a href="https://ubuntu.com/desktop">Ubuntu</a></li>
+            <li>Wamp and Dependencies</li>
+            <!-- <a href="link">template</a> -->
+                <ol>
+                    <li><a href="https://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3.3.2_x64.exe/download">Wamp Server</a></li>
+                    <li>
+                        <a href="https://wampserver.aviatechno.net/files/vcpackages/all_vc_redist_x86_x64.zip">All Vcc dependencies</a>
+                        </li>
+                    <li>
+                        <a href="https://wampserver.aviatechno.net/files/tools/check_vcredist.exe">Check for all VCC tools</a></li>
+                    <li><a href="https://github.com/abbodi1406/vcredist/releases">You may try a special (untested) tool to install all dependencies for you.  Please use the tool above to ensure everything was successful</a></li>
+                    <li><a href="https://www.joomla.org/">Joomla</a></li>
+                </ol>
+            <li><a href="https://www.apachefriends.org/download.html">XAMPP</a></li>
+
+            <li>Configure DHCP & DNS</li>
+        </ol>
+
+    
+    </p>
+    <p>*=: see other instructions for download</p>
+    <h2>Configuration</h2>
+    <p>
+        The project will generally be configured as follows:
+        <ul>
+            <li>Windows</li>
+                <ul>
+                    <li>WAMP with website</li>
+                    <li>Connected to AD</li>
+                </ul>
+            <li>Ubuntu</li>
+                <ul>
+                    <li>XAMPP with WAMP backup</li>
+                    <li>Connected to AD</li>
+                </ul>
+            <li>Windows Server</li>
+                <ul>
+                    <li>Active Directory</li>
+                    <li>DHCP</li>
+                    <li>DNS</li>
+                </ul>
+        </ul>
+    </p>
+
+    <h2>Bounty Program</h2>
+    <p>As incentive for actively contributing to the improvement of this project, a bounty program is in place, pull requests will be accepted for everything, including:</p>
+    <ul>
+        <li>minor corrections</li>
+        <li>process improvement</li>
+        <li>fixing any major error in the process</li>
+    </ul>
+    <p>Contributors can accumulate points based on their contributions, providing an additional incentive for engagement in the project.  Simply submit a pull request at: </p>
+
+    <p>Note: Some employers have been requesting GitHub profile links during job applications.  Having a GitHub
+        profile and actively contributing to the community by submitting bug reports, pull requests, and contributing your own code can be an asset on your job application!
+    </p>
+    <!-- <h2>Bounty Program</h2>
+    <p>As incentive for actively contributing to the improvement of this project, a bounty program is in place:</p>
+    <ul>
+        <li> __ points for minor corrections</li>
+        <li> __ points for process improvement</li>
+        <li> __ points for fixing any major error in the process</li>
+    </ul>
+    <p>Contributors can accumulate points based on their contributions, providing an additional incentive for engagement in the project.  Simply submit a pull request at: </p>
+
+    <p>Note: Some employers have been requesting GitHub profile links during job applications.  Having a GitHub
+        profile and actively contributing to the community by submitting bug reports, pull requests, and contributing your own code can be an asset on your job application!
+    </p> -->
+
+
+<!-- Overview of Bounty Programs in the IT Industry -->
+
+    <h2>Overview of Bounty Programs in the IT Industry</h2>
+    <p>Bounty programs are widely utilized in the IT industry as a proactive approach to identify and address security vulnerabilities, enhance software quality, and promote community collaboration. These programs, often known as bug bounty programs, invite ethical hackers, security researchers, and developers to discover and report issues within software or systems.
+    Common features of IT bounty programs include:</p>
+    <ul>
+        <li>Financial incentives for identifying and responsibly disclosing security vulnerabilities.</li>
+        <li>Recognition and rewards for valuable contributions to the improvement of software or system functionality.</li>
+        <li>Community engagement, fostering collaboration and knowledge sharing among contributors.</li>
+        <li>Continuous improvement of software security and robustness through the collective efforts of a diverse group of contributors.</li>
+    </ul>
+    <p>Such programs have become integral to the cybersecurity landscape, offering a win-win scenario for organizations seeking to fortify their systems and for individuals looking to showcase their skills while earning rewards.</p>
+
+
+    <script src="../script.js"></script>
+    <!-- <script src="/script.js"></script> -->
+    <!-- https://it-infrastructure-course.github.io/harddrive.github.io/ -->
+</body>
+</html>
