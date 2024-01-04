@@ -7,37 +7,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/mystyle.css"> <!-- Adjust the path to the CSS file as well -->
-
-<style>
-  .prev, .next {
-cursor: pointer;
-position: absolute;
-top: 30%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 34px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Position the "next button" to the right */
-.prev {
-left: 0;
-border-radius: 3px 0 0 3px;
-}
-/* Position the "next button" to the right */
-.next {
-/* margin-left: auto;
-margin-right: auto; */
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-</style>
 </head>
 <body>
     <div id="navbar-container"></div>
@@ -46,15 +15,14 @@ border-radius: 3px 0 0 3px;
 
 
   <!-- Slideshow container -->
-  <div class="center">
   <div class="slideshow-container">
 
     <!-- Full-width images with text box, code box, and copy code button -->
 <div class="mySlides fade">
   <div class="numbertext">1 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\1.jpeg" target="_blank">
-    <img src="../windows\windowsfirewall\windowsfirewallport\1.jpeg" style="width:100%">
+  <a href=".//windows\windowsfirewall\windowsfirewallport\1.jpeg" target="_blank">
+    <img src="./windowsfirewall\windowsfirewallport\1.jpeg" style="width:100%">
   </a>
   <div class="text-section">
     <p>
@@ -73,7 +41,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">2 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\2.jpeg" target="_blank">
+  <a href="2.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\2.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -93,7 +61,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">3 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\3.jpeg" target="_blank">
+  <a href="3.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\3.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -113,7 +81,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">4 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\4.jpeg" target="_blank">
+  <a href="4.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\4.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -133,7 +101,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">5 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\5.jpeg" target="_blank">
+  <a href="5.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\5.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -153,7 +121,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">6 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\6.jpeg" target="_blank">
+  <a href="6.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\6.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -173,7 +141,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">7 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\7.jpeg" target="_blank">
+  <a href="7.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\7.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -193,7 +161,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">8 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\8.jpeg" target="_blank">
+  <a href="8.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\8.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -213,7 +181,7 @@ border-radius: 3px 0 0 3px;
 <div class="mySlides fade">
   <div class="numbertext">9 / 9</div>
   <!-- Wrap the image in an anchor tag with a target attribute -->
-  <a href="../windows\windowsfirewall\windowsfirewallport\9.jpeg" target="_blank">
+  <a href="9.jpeg" target="_blank">
     <img src="./windowsfirewall\windowsfirewallport\9.jpeg" style="width:100%">
   </a>
   <div class="text-section">
@@ -228,14 +196,13 @@ border-radius: 3px 0 0 3px;
     <button class="copy-button" onclick="copyCode(9)">Copy Code</button>
   </div>
 </div>
-</div>
-</div>
+
     <!-- Other slides here -->
 
     <!-- Next and previous buttons -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
+  </div>
   <br>
   
   <!-- The dots/circles -->
