@@ -23,8 +23,9 @@
         
         <ol>
             <li>Install VMware and relevant operating systems onto a portable drive</li>
+            <li>Simulate real network configurations and settings between our virtual machines on our virtual network</li>
             <li>Practice incremental changes in virtual machines & create periodic backups</li>
-            <li>Develop a webserver with Wamp on a windows host using the loopback address (127.0.0.1/localhost)</li>
+            <li>Develop a webserver with Wamp on a windows PC using the loopback address (127.0.0.1/localhost)</li>
             <li>Create a hot backup of our Joomla installation</li>
             <li>Restore our backup created on Windows onto Ubuntu with XAMPP as the software stack</li>
             <li>Setup a Windows Server</li>
@@ -32,9 +33,9 @@
             <li>Create and add computers to an Active Directory</li>
         </ol>
     </p>
-    <h2>This project is loosely intended to progress as follows:</h2>
+    <h2>This project is intended to be completed in the following order:</h2>
 <ol type="1">
-    <li>Install Operating Systems</li>
+    <li><a href="../vmware\installingvms.html">Install Operating Systems</a></li>
     <ol type="1">
         <li>Windows Server</li>
         <li>Windows 10</li>
@@ -43,30 +44,30 @@
     </ol>
     <li>Windows 10</li>
         <ol type="1">
-            <li>Disable UAC (if needed for your Wamp startup method)</li>
-            <li>Install WAMP</li>
-            <li>Configure WAMP</li>
-            <li>Install Joomla</li>
-            <li>Customize your Joomla (at home)</li>
-            <li>Backup Joomla</li>
-            <li>Configure Firewall</li>
+            <li><a href="../windows\disableuac.html">Disable UAC (If needed for your startup method)</a></li>
+            <li><a href="../windows\installwamp.html">Install Wamp</a></li>
+            <li><a href="../windows\editconffiles.html">Configure Wamp</a></li>
+            <li><a href="../windows\installjoomla.html">Install Joomla</a></li>
+            <li>Customize your Joomla (at home, no instructions as everyone's will be different!)</li>
+            <li><a href="../windows\akeebabackup.html">Backup Joomla</a></li>
+            <li><a href="../windows\windowsfirewall.html">Open Firewall for outside access</a></li>
         </ol>
     <li>Ubuntu</li>
         <ol type="1">
-            <li>Install XAMPP</li>
-            <li>Restore Joomla (windows 10 PC must be open with Wamp server running, the correct ports open, and you must know the IP address to navigate to the WAMP server, and the backup location on the Wamp server.)</li>
+            <li><a href="../ubuntu\installxampp.html">Install XAMPP</a></li>
+            <li><a href="../ubuntu\restorejoomla.html">Restore Joomla</a> (windows 10 PC must be open with Wamp server running, the correct ports open, and you must know the IP address to navigate to the WAMP server, and the backup location on the Wamp server.)</li>
             <!-- <li>Configure firewall if needed for remote site access</li> -->
         </ol>
     <li>Windows Server</li>
         <ol type="1">
-            <li>Set Static IP</li>
-            <li>Add services</li>
-            <li>Configure DHCP scope</li>
+            <li><a href="../windowsserver\setstaticip.html">Set static IP</a></li>
+            <li><a href="../windowsserver/addservices.html">Add services</a></li>
+            <li><a href="../windowsserver/configuredhcp.html">Configure DHCP scope</a></li>
         </ol>
     <li>Active Directory / Windows Server</li>
         <ol type="1">
-            <li>Add Windows to AD</li>
-            <li>Add Ubunto to AD</li>
+            <li><a href="../windows\addwindowstoad.html">Add Windows to AD</a></li>
+            <li><a href="../ubuntu\addtoad.html">Add Ubuntu to AD</a></li>
         </ol>
 </ol>
 <h2>Requirements</h2>
@@ -121,7 +122,8 @@
     </p>
 
     <h2>Bounty Program</h2>
-    <p>As incentive for actively contributing to the improvement of this project, a bounty program is in place, pull requests will be accepted for everything, including:</p>
+    <p> Removed / commented out</p>
+    <!-- <p>As incentive for actively contributing to the improvement of this project, a bounty program is in place, pull requests will be accepted for everything, including:</p>
     <ul>
         <li>minor corrections</li>
         <li>process improvement</li>
@@ -131,7 +133,7 @@
 
     <p>Note: Some employers have been requesting GitHub profile links during job applications.  Having a GitHub
         profile and actively contributing to the community by submitting bug reports, pull requests, and contributing your own code can be an asset on your job application!
-    </p>
+    </p> -->
     <!-- <h2>Bounty Program</h2>
     <p>As incentive for actively contributing to the improvement of this project, a bounty program is in place:</p>
     <ul>
@@ -149,7 +151,8 @@
 <!-- Overview of Bounty Programs in the IT Industry -->
 
     <h2>Overview of Bounty Programs in the IT Industry</h2>
-    <p>Bounty programs are widely utilized in the IT industry as a proactive approach to identify and address security vulnerabilities, enhance software quality, and promote community collaboration. These programs, often known as bug bounty programs, invite ethical hackers, security researchers, and developers to discover and report issues within software or systems.
+    <p>Commented out</p>
+    <!-- <p>Bounty programs are widely utilized in the IT industry as a proactive approach to identify and address security vulnerabilities, enhance software quality, and promote community collaboration. These programs, often known as bug bounty programs, invite ethical hackers, security researchers, and developers to discover and report issues within software or systems.
     Common features of IT bounty programs include:</p>
     <ul>
         <li>Financial incentives for identifying and responsibly disclosing security vulnerabilities.</li>
@@ -157,7 +160,7 @@
         <li>Community engagement, fostering collaboration and knowledge sharing among contributors.</li>
         <li>Continuous improvement of software security and robustness through the collective efforts of a diverse group of contributors.</li>
     </ul>
-    <p>Such programs have become integral to the cybersecurity landscape, offering a win-win scenario for organizations seeking to fortify their systems and for individuals looking to showcase their skills while earning rewards.</p>
+    <p>Such programs have become integral to the cybersecurity landscape, offering a win-win scenario for organizations seeking to fortify their systems and for individuals looking to showcase their skills while earning rewards.</p> -->
 
 
     <script src="../script.js"></script>
