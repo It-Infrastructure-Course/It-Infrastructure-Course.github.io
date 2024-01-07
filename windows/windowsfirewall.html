@@ -116,7 +116,8 @@
     </a>
     <div class="text-section">
       <p>
-        Step 6
+        Step 6<br>
+        Ports I have open for Wamp are 80, 443, & 3306
       </p>
     </div>
     <div class="code-section">
@@ -191,7 +192,13 @@
       <!-- Dots here -->
     </div>
   </div>
-
+<p>
+  Firewall ports may also be opened as follows in the command prompt or powershell:
+  <code>
+    :: Open port 80 for Apache (HTTP)<br>
+    netsh advfirewall firewall add rule name="OpenPort80" dir=in action=allow protocol=TCP localport=80
+  </code>
+</p>
 
     <script src="../script.js" async defer></script>
 </body>
