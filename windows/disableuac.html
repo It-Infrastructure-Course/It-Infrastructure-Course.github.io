@@ -58,7 +58,27 @@
       </div>    
 
 
+<p>Please note: Exact instructions for how to autostart Wamp server will not  be given, however, you could <a href="../media\documents\wamp.bat.txt">peruse this .bat file which was created to automate the entire process.</a> Do not run the .bat file if your system already has WAMP installed, as it will cause issues.  The most relevant lines in the file to pay attention to autostart Wamp are:</p>
 
+<code>
+  :: Generate and execute another batch file to start WampServer Manager<br>
+  set "generatedBatchFile=RunWampServer.bat"<br>
+  (<br>
+    echo @echo off<br>
+    echo start "" "C:\wamp64\wampmanager.exe"<br>
+  ) > "%generatedBatchFile%"<br>
+  <br>
+  echo Batch file '%generatedBatchFile%' has been created.<br>
+  <br>
+  :: Copy the generated batch file to the startup folder<br>
+  set "startupFolder=%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"<br>
+  copy "%generatedBatchFile%" "%startupFolder%"<br>
+  <br>
+  echo Batch file '%generatedBatchFile%' has been copied to the startup folder.<br>
+</code>
+
+<br>
+<br>
 
       <script src="../script.js" async defer></script>
     </body>
